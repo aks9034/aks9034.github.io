@@ -29,30 +29,7 @@ $(function () {
 
 //what happens after clicking on the prjects
 
-    $('.reference a').on('click', function (e) {
-
-        e.preventDefault();
-       // console.log(this);
-        var title = $(this).find('.reference-title').text(),
-            description = $(this).siblings('.reference-description').html();
-
-        $('#detail-title').text(title);
-        $('#detail-content').html(description);
-
-        var images = $(this).siblings('.reference-description').data('images').split(',');
-        if (images.length > 0) {
-            sliderContent = '';
-            for (var i = 0; i < images.length; ++i) {
-                sliderContent = sliderContent + '<div class="item"><img src=' + images[i] + ' alt="" class="img-fluid"></div>';
-            }
-        } else {
-            sliderContent = '';
-        }
-
-        openReference(sliderContent);
-
-    });
-
+   
     function openReference(sliderContent) {
         $('#detail').slideDown();
         $('#references-styles').slideUp();
