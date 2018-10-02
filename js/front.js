@@ -26,43 +26,7 @@ $(function () {
         });
 
     });
-
-//what happens after clicking on the prjects
-
-   
-    function openReference(sliderContent) {
-        $('#detail').slideDown();
-        $('#references-styles').slideUp();
-
-
-        if (sliderContent !== '') {
-
-            var slider = $('#detail-slider');
-
-            if (slider.hasClass('owl-loaded')) {
-                slider.trigger('replace.owl.carousel', sliderContent);
-            } else {
-                slider.html(sliderContent);
-                slider.owlCarousel({
-                    nav: true,
-                    dots: true,
-                    items: 1
-                });
-
-            }
-        }
-    }
-
-
-    function closeReference() {
-        $('#references-style').slideDown();
-        $('#detail').slideUp();
-    }
-
-    $('#filter button, #detail .close').on('click', function () {
-        closeReference();
-    });
-
+    
     /*animations*/
 
     delayTime = 0;
@@ -86,5 +50,3 @@ $(function () {
     }); 
 
 });
-
-
