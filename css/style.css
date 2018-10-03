@@ -412,9 +412,9 @@ nav.navbar a.nav-link.active, nav.navbar a.nav-link:hover {
   margin-bottom: 20px;
 }
 
-.fb-comments{
+#fb-root, .fb-comments{
     margin:auto;
-  width:100%;
+  width:auto;
   
 }
 
