@@ -412,11 +412,14 @@ nav.navbar a.nav-link.active, nav.navbar a.nav-link:hover {
   margin-bottom: 20px;
 }
 
-#fb-root, .fb-comments{
-    margin:auto;
-  width:auto;
-  
-}
+.comments { 
+	width: 100%; 
+	float: right; 
+	font-family: Arial, Helvetica, sans-serif; 
+	color: #ff6600; 
+	}
+
+	.comments a { color: #ff6600; }
 
 footer.main-footer {
   padding: 60px 0;
